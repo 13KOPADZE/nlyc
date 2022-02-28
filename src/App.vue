@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+	<div class="def-padding">
+		<Main />
+		<MagentoBell />
+		<TopMagento />
+		<MagentoServices />
+		<MagentoDetails />
+	</div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Main from './components/Main.vue';
+import MagentoBell from './components/MagentoBell.vue';
+import TopMagento from './components/TopMagento.vue';
+import MagentoServices from './components/MagentoServices.vue';
+import MagentoDetails from './components/MagentoDetails.vue';
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
+	name: 'App',
+	components: {
+		Main,
+		MagentoBell,
+		TopMagento,
+		MagentoServices,
+		MagentoDetails,
+	},
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

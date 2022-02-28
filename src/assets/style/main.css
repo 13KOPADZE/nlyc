@@ -1,0 +1,685 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.def-padding {
+	padding: 144px 0 0;
+}
+.pointer {
+	cursor: pointer;
+}
+.font-14 {
+	font-size: 14px;
+}
+.font-16 {
+	font-size: 16px;
+}
+.font-18 {
+	font-size: 18px;
+}
+.font-20 {
+	font-size: 20px;
+}
+.font-32 {
+	font-size: 32px;
+}
+.font-34 {
+	font-size: 34px;
+}
+.lh-26 {
+	line-height: 26px;
+}
+.lh-40 {
+	line-height: 40px;
+}
+.lh-52 {
+	line-height: 52px;
+}
+.z-2 {
+	z-index: 2;
+}
+.flex {
+	display: flex;
+}
+.between {
+	justify-content: space-between;
+}
+.al-center {
+	align-items: center;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	text-align: left;
+}
+p {
+	text-align: left;
+	color: rgba(33, 36, 46, 0.8);
+}
+.container {
+	padding: 0 110px;
+}
+.col-black {
+	color: #000;
+}
+.col-white {
+	color: #fff;
+}
+.col-grey {
+	color: rgb(255, 255, 255, 0.5);
+}
+.magento-bell {
+	max-width: 640px;
+	margin: 80px auto;
+	position: relative;
+}
+.main-block {
+	display: flex;
+}
+.main-block img {
+	margin: 0 auto;
+}
+.magento-text-block p {
+	margin-top: 30px;
+}
+.magento-text-block img {
+	display: flex;
+	margin: 0 auto;
+}
+/* topMagentoStore */
+.top-magento-stores {
+	padding: 85px 110px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.top-magento-stores h2 {
+	margin-bottom: 24px;
+}
+.top-magento-stores h2,
+.top-magento-stores p {
+	text-align: left;
+}
+.magento-images {
+	gap: 60px;
+	margin-top: 50px;
+}
+.img-box img {
+	cursor: pointer;
+	filter: grayscale(100%);
+	transition: 0.4s ease-in-out;
+}
+.img-box:hover img {
+	filter: grayscale(0%);
+	transition: 0.4s ease-in-out;
+}
+/* Services logo */
+.magento-services {
+	margin-top: 110px;
+	margin-bottom: 140px;
+}
+.magento-img-box {
+	max-width: calc(50% - 30px);
+}
+.magento-img-box img {
+	width: 100%;
+}
+.services-info {
+	max-width: 460px;
+	margin-right: 30px;
+}
+.services-info h2 {
+	margin-bottom: 25px;
+}
+.services-info .text {
+	margin-bottom: 18px;
+}
+.services-list:not(:last-child) {
+	margin-bottom: 15px;
+}
+.services-logo {
+	width: 17px;
+	height: 17px;
+	margin-right: 20px;
+}
+.services-info .text {
+	font-size: 18px;
+}
+
+/* Magento details */
+.magento-details {
+	position: relative;
+	background-color: #231f20;
+	padding: 64px 110px 64px 180px;
+}
+.magento-details h2 {
+	margin-bottom: 32px;
+}
+.details-bg {
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+}
+.details-actions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.details-button {
+	width: 300px;
+	height: 56px;
+	color: #fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	font-weight: 700;
+	border: 1px solid #f15c22;
+	background-color: #f15c22;
+	transition: 0.4s ease-in-out;
+}
+.details-button:hover {
+	background-color: transparent;
+}
+
+/* Modal */
+.modal {
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	position: fixed;
+	pointer-events: none;
+	transition: 0.4s ease-in-out;
+	transform: translate(-50%, -50%);
+}
+.modal-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(33, 36, 46, 0.6);
+}
+.modal.active {
+	opacity: 1;
+	pointer-events: all;
+	transition: 0.4s ease-in-out;
+}
+.modal-content {
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	height: 90%;
+	z-index: 1;
+	overflow-y: auto;
+	position: absolute;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+	border-radius: 24px 24px 0px 0px;
+}
+.modal-content::-webkit-scrollbar {
+	width: 1px;
+	height: 1px;
+	background-color: transparent;
+}
+.modal-content::-webkit-scrollbar-track {
+	width: 1px;
+	height: 1px;
+	background-color: transparent;
+}
+.modal-content::-webkit-scrollbar-thumb {
+	width: 1px;
+	height: 1px;
+	background-color: transparent;
+}
+.modal-container {
+	position: relative;
+	padding: 40px 50px 40px 170px;
+}
+.modal-title {
+	border-bottom: 1px solid #f2f2f2;
+}
+.form {
+	width: calc(50% - 15px);
+}
+h3 {
+	text-align: left;
+	margin-bottom: 20px;
+}
+.input {
+	position: relative;
+	margin-bottom: 20px;
+	transition: 0.4s ease-in-out;
+}
+.input.error {
+	margin-bottom: 30px;
+	transition: 0.4s ease-in-out;
+}
+.error-txt {
+	left: 2px;
+	opacity: 0;
+	z-index: 1;
+	bottom: -22px;
+	font-size: 14px;
+	color: #931914;
+	position: absolute;
+	transition: opacity 0.2s, 0.4s ease-in-out;
+}
+.error-txt.active {
+	opacity: 1;
+	transition: 0.4s ease-in-out;
+}
+label {
+	top: 18px;
+	left: 30px;
+	position: absolute;
+	pointer-events: none;
+	transition: 0.2s ease-in-out;
+	color: rgba(33, 36, 46, 0.6);
+}
+.input input:focus + label,
+.input textarea:focus + label {
+	top: 5px;
+	font-size: 14px;
+	line-height: 13px;
+	transition: 0.2s ease-in-out;
+}
+.filled + label {
+	top: 5px;
+	font-size: 14px;
+	line-height: 13px;
+	position: absolute;
+	pointer-events: none;
+	transition: 0.2s ease-in-out;
+}
+.input input,
+.input textarea {
+	width: 326px;
+	height: 56px;
+	outline: none;
+	color: #21242e;
+	background: #fff;
+	border-radius: 12px;
+	border: 1px solid #eef0fd;
+	padding: 27px 30px 27px 30px;
+}
+textarea {
+	min-height: 100px;
+	resize: none;
+}
+.input input:focus,
+.input textarea:focus {
+	border: 1px solid #e0e2f0;
+}
+.error input {
+	border: 1px solid #931914;
+}
+.submit-button {
+	width: 326px;
+	height: 56px;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 17px;
+	border-radius: 10px;
+	border: transparent;
+	background: #ee9c21;
+	letter-spacing: 0.07em;
+	transition: 0.4s ease-in-out;
+}
+.submit-button:hover {
+	background: #f15c22;
+	transition: 0.4s ease-in-out;
+}
+.plan-a-call {
+	margin: 0 auto;
+}
+
+.plan-a-call .plan-link {
+	margin-top: 40px;
+	display: grid;
+	width: 216px;
+	height: 56px;
+	color: #fff;
+	place-items: center;
+	border-radius: 10px;
+	background: #f15c22;
+	border: 1px solid #f15c22;
+	transition: 0.4s ease-in-out;
+}
+.plan-a-call .plan-link:hover {
+	color: #f15c22;
+	background: #fff;
+	border: 1px solid #f15c22;
+	transition: 0.4s ease-in-out;
+}
+
+.plan-a-call .modal-img-box {
+	margin-bottom: 40px;
+}
+.plan-link {
+	width: 300px;
+	height: 56px;
+	display: grid;
+	place-items: center;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	transition: 0.4s ease-in-out;
+}
+.plan-link:hover {
+	color: #f15c22;
+	border: 1px solid #f15c22;
+	transition: 0.4s ease-in-out;
+}
+.between-line {
+	top: 50%;
+	left: 50%;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	background-color: #e4e4e4;
+	transform: translate(-50%, -50%);
+}
+.choice {
+	display: grid;
+	place-items: center;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #fff;
+	color: rgba(33, 36, 46, 1);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgba(33, 36, 46, 0.1);
+}
+/* BELL */
+.bell-animation {
+	top: 0;
+	right: -20%;
+	cursor: pointer;
+	position: absolute;
+}
+.bell-animation:hover .bell-circle:nth-child(1) {
+	animation: pulsingOne 1.5s ease-in-out infinite;
+}
+.bell-animation:hover .bell-circle:nth-child(2) {
+	animation: pulsingTwo 1.5s ease-in-out infinite;
+}
+.bell-animation:hover svg {
+	animation: bellshake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+.bell-circle {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	border-radius: 100%;
+	border: 1px solid #ef5b22;
+	transform: translate(-50%, -50%);
+}
+.bell-circle:nth-child(1) {
+	width: 142px;
+	height: 142px;
+	opacity: 0.1;
+	animation-delay: 0.5s;
+}
+.bell-circle:nth-child(2) {
+	width: 114px;
+	height: 114px;
+	opacity: 0.4;
+	animation-delay: 1s;
+}
+.bell-circle:nth-child(3) {
+	width: 86px;
+	height: 86px;
+	opacity: 1;
+}
+@keyframes pulsingOne {
+	0% {
+		opacity: 0.1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+@keyframes pulsingTwo {
+	0% {
+		opacity: 0.4;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+@keyframes bellshake {
+	0% {
+		transform: rotate(0);
+	}
+	15% {
+		transform: rotate(5deg);
+	}
+	30% {
+		transform: rotate(-5deg);
+	}
+	45% {
+		transform: rotate(4deg);
+	}
+	60% {
+		transform: rotate(-4deg);
+	}
+	75% {
+		transform: rotate(2deg);
+	}
+	85% {
+		transform: rotate(-2deg);
+	}
+	92% {
+		transform: rotate(1deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+.vue-phone-number-input {
+	width: 326px;
+	margin-bottom: 20px;
+}
+.country-selector,
+.input-tel,
+.input-tel input,
+.country-selector input {
+	height: 56px !important;
+}
+.input-tel input {
+	border-top-right-radius: 12px !important;
+	border-bottom-right-radius: 12px !important;
+}
+.country-selector input {
+	border-top-left-radius: 12px !important;
+	border-bottom-left-radius: 12px !important;
+}
+.country-selector input {
+	border-color: #eef0fd !important;
+	box-shadow: none !important;
+}
+.country-selector__country-flag {
+	top: 30px !important;
+}
+.country-selector__toggle {
+	top: 50% !important;
+	transform: translateY(-30%);
+}
+
+.input-tel__input {
+	box-shadow: none !important;
+	border-color: #eef0fd !important;
+}
+@media (max-width: 1439px) {
+	.magento-details {
+		padding: 40px 110px 40px 110px;
+	}
+	/* TOP MAGENTO */
+	.top-magento-stores {
+		padding: 60px 110px;
+	}
+	/* Services info */
+	.services-info {
+		max-width: calc(50% - 30px);
+	}
+	.modal-container {
+		padding: 40px 30px 40px 60px;
+	}
+}
+@media (max-width: 1023px) {
+	.magento-details {
+		padding: 40px 60px 40px 60px;
+	}
+	/* MODAL */
+	.modal-content {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		overflow-y: auto;
+	}
+	.modal-container {
+		padding: 25px;
+	}
+	.main-block {
+		flex-direction: column;
+	}
+	.form,
+	.plan-a-call,
+	input,
+	textarea,
+	.submit-button,
+	.vue-phone-number-input {
+		width: 100% !important;
+	}
+	.form {
+		margin-bottom: 40px;
+	}
+	.modal-img-box {
+		width: 100%;
+		display: flex;
+	}
+	.between-line {
+		width: 100%;
+		height: 2px;
+		position: relative;
+		margin-bottom: 40px;
+		background-color: #e4e4e4;
+	}
+	/* TOP MAGENTO */
+	.top-magento-stores {
+		padding: 60px 60px !important;
+	}
+	.magento-images {
+		gap: 30px;
+	}
+	/* Modal */
+
+	/* BELL */
+	.bell-animation {
+		right: 0;
+		width: 80px;
+		height: 80px;
+		display: grid;
+		margin-left: auto;
+		position: relative;
+		place-items: center;
+	}
+	.bell-circle:nth-child(1) {
+		width: 80px;
+		height: 80px;
+	}
+	.bell-circle:nth-child(2) {
+		width: 64px;
+		height: 64px;
+	}
+	.bell-circle:nth-child(3) {
+		width: 49px;
+		height: 49px;
+	}
+	.bell-animation svg {
+		width: 25px;
+	}
+
+	/* Services info */
+	.container {
+		padding: 0 60px;
+	}
+}
+
+@media (max-width: 767px) {
+	/* Main-block */
+	.main-block img {
+		width: 120%;
+	}
+
+	.magento-details {
+		padding: 64px 23px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	/* TOP MAGENTO */
+	.top-magento-stores {
+		padding: 70px 23px !important;
+	}
+	.magento-images {
+		gap: 20px;
+	}
+	/* Magento details */
+	.details-text {
+		margin-bottom: 40px;
+	}
+	/* Services info */
+	.container {
+		padding: 0 23px;
+	}
+	.magento-services {
+		margin-top: 45px;
+		margin-bottom: 90px;
+		flex-direction: column;
+	}
+	.services-info {
+		max-width: 100%;
+	}
+	.magento-img-box {
+		margin: 0 auto;
+		max-width: 100%;
+		margin-top: 40px;
+	}
+	/* magento text */
+	.magento-bell {
+		max-width: 100%;
+		padding: 0 23px;
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+	.bell-animation {
+		margin-top: 20px;
+	}
+	.magento-text-block img {
+		width: 70%;
+	}
+	.modal-img-box img {
+		width: 100%;
+	}
+}
